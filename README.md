@@ -1,75 +1,70 @@
-Sure, here's a basic README file for your Flask application:
+Certainly! Here's a basic README file template for your Vue.js application:
 
 ```markdown
-# Flask Blog API
+# Vue.js Blog Frontend
 
-This is a RESTful API built with Flask for managing blog posts, users, comments, and categories.
+This is a Vue.js frontend application for managing a blog, interacting with a RESTful API built with Flask.
 
 ## Getting Started
 
 ### Prerequisites
 
-- Python 3.x
-- SQLite
+- Node.js
+- npm (Node Package Manager)
 
 ### Installing
 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/sachinda96/blog-back-end.git
+   git clone https://github.com/sachinda96/blog-front-end.git
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd blog-back-end
+   cd blog-front-end
    ```
 
-3. Install the required Python packages:
+3. Install dependencies:
 
    ```bash
-   pip install Flask Flask-CORS
+   npm install
    ```
 
 ### Running the Application
 
-1. Run the Flask application:
+```bash
+npm run serve
+```
 
-   ```bash
-   python app.py
-   ```
+The application will start running on `http://localhost:8080`.
 
-   The application will start running on `http://localhost:5000`.
+## Features
 
-## Endpoints
+- View all blog posts
+- View individual blog posts
+- Create, update, and delete blog posts (requires authentication)
+- View and submit comments on blog posts (requires authentication)
+- View blog posts by category
+- Pagination for blog posts
 
-- **GET /users**: Retrieve all users or create a new user.
-- **GET /users/<int:user_id>**: Retrieve, update, or delete a specific user.
-- **GET /blogs**: Retrieve all blogs or create a new blog.
-- **GET /blogs/<int:blog_id>**: Retrieve, update, or delete a specific blog.
-- **GET /comments**: Retrieve all comments or create a new comment.
-- **GET /comments/<int:comment_id>**: Retrieve, update, or delete a specific comment.
-- **GET /categories**: Retrieve all categories or create a new category.
-- **GET /categories/<int:category_id>**: Retrieve, update, or delete a specific category.
-- **GET /blogs/category/<int:category_id>**: Retrieve blogs by category.
-- **GET /comments/blog/<int:blog_id>**: Retrieve comments by blog.
-- **GET /blogs/category/<int:category_id>/<int:page_number>/<int:per_page>**: Retrieve paginated blogs by category.
-- **GET /blogs/page/<int:page_number>/<int:per_page>**: Retrieve paginated blogs.
+## Technologies Used
 
-## Authentication
+- Vue.js
+- Vue Router
+- QuillEditor
+- Bootstrap (or any other CSS framework you are using)
 
-- **POST /register**: Register a new user.
-- **POST /login**: Login with username and password.
+## Folder Structure
 
-## Database
-
-![bloger](https://github.com/sachinda96/blog-back-end/assets/33303027/1bb248f4-4bc2-41d4-93ee-940fe8d13a99)
-
-
-This application uses SQLite as the database backend. The database file (`blog-database.db`) will be created automatically when the application is run for the first time.
+- `public/`: Static assets and HTML template
+- `src/`: Vue.js source code
+  - `assets/`: Images, styles, and other static assets
+  - `components/`: Vue components
+  - `views/`: Vue components representing views or pages
+  - `router/`: Vue Router configuration
 
 ## Authors
 
-- Your Name - [@yourusername](https://github.com/yourusername)
-
+- Your Name - [@yourusername](https://github.com/sachinda96/blog-front-end.git)
